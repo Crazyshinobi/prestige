@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: #b69b56;
+  font-weight: bold;
+}
+
+.prestige-desc > p,
+.location-desc,
+.about-desc {
+  text-align: justify;
+}
+
+#projectHighlight,
+#floorPlan,
+#about {
+  background-color: #b69b56;
+}
+
+.amenity-card,
+.floor-card {
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.floor-card {
+  border: 3px solid black;
+}
+
+.floor-card > div > img {
+  border: 1px solid black;
+}
+
+.amenity-card:hover,
+.floor-card:hover {
+  transform: translateY(-10%);
+  box-shadow: 10px 10px 32px -1px rgba(0, 0, 0, 0.75);
+}
+
+.location-key {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.gallery-img {
+  border: 4px solid #6d5c32;
+}
+
+/* Footer  */
+footer {
+  background-color: #6d5c32;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-desc {
+  text-align: justify;
+}
