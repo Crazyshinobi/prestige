@@ -16,7 +16,7 @@ setInterval(() => {
     form.classList.remove("d-none");
     form.classList.add("d-flex");
   }
-}, 5000);
+}, 10000);
 
 // Handle form submission
 function showToast(message, type) {
@@ -41,31 +41,62 @@ function showToast(message, type) {
 }
 
 let myform = document.querySelector("#contact-form");
-// myform.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let data = new FormData(myform);
+let secondForm = document.querySelector("#second-form");
 
-//   fetch(
-//     "https://script.google.com/macros/s/AKfycbwf6YmxuNHCGbANk03u524fMCKnHZ_hMg0g6FOtydXZeL0UYBDaZwadhE2maB72ZDhX/exec",
-//     {
-//       method: "POST",
-//       body: data,
-//       headers: {
-//         Accept: "application/json",
-//         "Content-Type": "application/x-www-form-urlencoded",
-//       },
-//     }
-//   )
-//     .then((res) => res.text())
-//     .then((data) => {
-//       myform.reset();
-//       showToast("Form submitted successfully!", "success");
-//     })
-//     .catch((error) => {
-//       console.error("Error:", error);
-//       showToast(
-//         "There was an error submitting the form. Please try again.",
-//         "error"
-//       );
-//     });
-// });
+secondForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let data = new FormData(secondForm);
+
+  fetch(
+    "https://script.google.com/macros/s/AKfycbzuBgMBkQur3NNsGjzLMhBgexvotYor4SWllPvTR7aaopECmRbcmRGmgxuZM7kjr3oMvA/exec",
+    {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  )
+    .then((res) => res.text())
+    .then((data) => {
+      secondForm.reset();
+      showToast("Form submitted successfully!", "success");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      showToast(
+        "There was an error submitting the form. Please try again.",
+        "error"
+      );
+    });
+});
+
+
+myform.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let data = new FormData(myform);
+
+  fetch(
+    "https://script.google.com/macros/s/AKfycbzuBgMBkQur3NNsGjzLMhBgexvotYor4SWllPvTR7aaopECmRbcmRGmgxuZM7kjr3oMvA/exec",
+    {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    }
+  )
+    .then((res) => res.text())
+    .then((data) => {
+      myform.reset();
+      form.classList.add('d-none');
+      showToast("Form submitted successfully!", "success");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      showToast(
+        "There was an error submitting the form. Please try again.",
+        "error"
+      );
+    });
+});
