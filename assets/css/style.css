@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +21,10 @@
   width: 100%;
 }
 
+.headings {
+  font-family: "Pacifico", cursive;
+}
+
 .prestige-desc > p,
 .location-desc,
 .about-desc {
@@ -36,10 +43,6 @@
   cursor: pointer;
 }
 
-.floor-card {
-  /* border: 3px solid black; */
-}
-
 .floor-card > div > img {
   border: 1px solid black;
 }
@@ -50,6 +53,13 @@
   box-shadow: 10px 10px 32px -1px rgba(0, 0, 0, 0.75);
 }
 
+.floor-call-btn{
+  display: none;
+}
+
+.floor-card:hover .floor-call-btn{
+  display: block;
+}
 .location-key {
   margin-bottom: 0px;
   font-size: 18px;

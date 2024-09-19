@@ -1,14 +1,27 @@
 const closeBtn = document.getElementById("close-form-btn");
 const form = document.getElementById("form-wrapper");
 const floatingBtn = document.getElementById("floating-btn");
+const callFloorBtns = document.querySelectorAll(".call-floor");
+const downloadBrochure = document.querySelector(".download-brochure");
+console.log(downloadBrochure);
 
 closeBtn.addEventListener("click", () => {
   form.classList.add("d-none");
 });
 
+downloadBrochure.addEventListener("click", () => {
+  form.classList.remove("d-none");
+});
+
 // Show form when the floating button is clicked
 floatingBtn.addEventListener("click", () => {
   form.classList.remove("d-none");
+});
+
+callFloorBtns.forEach((callFloorBtn) => {
+  callFloorBtn.addEventListener("click", () => {
+    form.classList.remove("d-none");
+  });
 });
 
 // setInterval(() => {
@@ -71,7 +84,6 @@ secondForm.addEventListener("submit", (e) => {
     });
 });
 
-
 myform.addEventListener("submit", (e) => {
   e.preventDefault();
   let data = new FormData(myform);
@@ -89,7 +101,7 @@ myform.addEventListener("submit", (e) => {
     .then((res) => res.text())
     .then((data) => {
       myform.reset();
-      form.classList.add('d-none');
+      form.classList.add("d-none");
       showToast("Form submitted successfully!", "success");
     })
     .catch((error) => {
