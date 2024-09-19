@@ -10,6 +10,14 @@
   font-weight: bold;
 }
 
+.nav-item {
+  font-size: 18px;
+}
+
+.heroCarousel > img {
+  width: 100%;
+}
+
 .prestige-desc > p,
 .location-desc,
 .about-desc {
@@ -109,7 +117,7 @@
 /* Floating Button Styles */
 .floating-btn {
   position: fixed;
-  bottom: 60px;
+  bottom: 70px;
   right: 20px;
   background-color: #000;
   color: white;
@@ -157,7 +165,6 @@
   opacity: 1;
 }
 
-
 /* Footer  */
 footer {
   background-color: #6d5c32;
@@ -170,4 +177,8 @@ footer {
 
 .footer-desc {
   text-align: justify;
+}
+
+.copyright-text {
+  font-size: 12px;
 }

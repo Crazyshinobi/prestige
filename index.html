@@ -16,7 +16,10 @@
   </head>
   <body class="position-relative">
     <!-- Navbar  -->
-    <nav class="navbar sticky-top navbar-expand-lg bg-white">
+    <nav
+      class="navbar sticky-top navbar-expand-lg bg-white"
+      style="box-shadow: -1px 13px 14px -3px rgba(138, 138, 138, 0.575)"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.png" alt="" width="120" />
@@ -34,22 +37,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item mx-3 fs-5">
+            <li class="nav-item mx-3">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
-            <li class="nav-item mx-3 fs-5">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#floorPlan">Master & Floor Plan</a>
             </li>
-            <li class="nav-item mx-3 fs-5">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#locationAdvantages"
                 >Location Advantages</a
               >
             </li>
-            <li class="nav-item mx-3 fs-5">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item mx-3 fs-5">
+            <li class="nav-item mx-3">
               <a class="nav-link" href="#about">Contact Us</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="tel:9650524480">
+                <img src="assets/img/phone-call.png" alt="" width="22" />
+                +91-9650524480</a
+              >
             </li>
           </ul>
         </div>
@@ -60,16 +69,8 @@
 
     <!-- Hero  -->
     <section id="home">
-      <div class="owl-carousel" id="heroCarousel">
-        <div class="item">
-          <img src="assets/img/Prestige city.jpg" alt="" height="525" />
-        </div>
-        <div class="item">
-          <img src="assets/img/Prestige city.jpg" alt="" height="525" />
-        </div>
-        <div class="item">
-          <img src="assets/img/Prestige city.jpg" alt="" height="525" />
-        </div>
+      <div class="heroCarousel">
+        <img src="assets/img/Prestige city.jpg" alt="" height="525" />
       </div>
     </section>
 
@@ -680,22 +681,6 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 col-6">
                 <div class="footer-content my-5">
-                  <h3 class="footer-heading text-white">Our Company</h3>
-                  <ul class="m-0 p-0 ms-3">
-                    <li class="mt-2">
-                      <a href="#" class="footer-link">Lorem Ipsum</a>
-                    </li>
-                    <li class="mt-2">
-                      <a href="#" class="footer-link">Lorem Ipsum</a>
-                    </li>
-                    <li class="mt-2">
-                      <a href="#" class="footer-link">Lorem Ipsum</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                <div class="footer-content my-5">
                   <h3 class="footer-heading text-white">Our Policies</h3>
                   <ul class="m-0 p-0 ms-3">
                     <li class="mt-2">
@@ -711,22 +696,19 @@
                 </div>
               </div>
 
-              <div class="col-12 text-white">
-                <strong>Disclaimer :</strong>This website is not an official
-                site and it belongs to the authorized channel partner for
-                information purpose only. The content provided on this website
-                is for information purposes only and does not constitute an
-                offer to avail any service. The prices mentioned are subject to
-                change without prior notice, and the availability of properties
-                mentioned is not guaranteed.
-              </div>
+              <div class="col-12 text-white"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="copyright bg-black">
         <p class="copyright-text text-center text-white py-3 mb-0">
-          Copyright © 2024 | developed by Crazyshinobi
+          <strong>Disclaimer :</strong>This website is not an official site and
+          it belongs to the authorized channel partner for information purpose
+          only. The content provided on this website is for information purposes
+          only and does not constitute an offer to avail any service. The prices
+          mentioned are subject to change without prior notice, and the
+          availability of properties mentioned is not guaranteed.
         </p>
       </div>
     </footer>
@@ -736,29 +718,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/index.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#heroCarousel").owlCarousel({
-          loop: true,
-          nav: false,
-          autoplay: true,
-          autoplayTimeout: 3000,
-          autoplayHoverPause: true,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 1,
-            },
-          },
-        });
-      });
-    </script>
+
     <script>
       $(document).ready(function () {
         $("#galleryCarousel").owlCarousel({

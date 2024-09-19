@@ -11,12 +11,12 @@ floatingBtn.addEventListener("click", () => {
   form.classList.remove("d-none");
 });
 
-setInterval(() => {
-  if (form.classList.contains("d-none")) {
-    form.classList.remove("d-none");
-    form.classList.add("d-flex");
-  }
-}, 10000);
+// setInterval(() => {
+//   if (form.classList.contains("d-none")) {
+//     form.classList.remove("d-none");
+//     form.classList.add("d-flex");
+//   }
+// }, 10000);
 
 // Handle form submission
 function showToast(message, type) {
