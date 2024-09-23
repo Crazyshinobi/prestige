@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 * {
   margin: 0;
@@ -7,13 +7,18 @@
   scroll-behavior: smooth;
 }
 
+
 .nav-link {
   color: #b69b56;
   font-weight: bold;
 }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.nav-item.active {
+  text-decoration: underline;
 }
 
 .heroCarousel > img {
@@ -24,6 +29,7 @@
 .location-desc,
 .about-desc {
   text-align: justify;
+  font-size: 17px !important;
 }
 
 #projectHighlight,
@@ -48,11 +54,11 @@
   box-shadow: 10px 10px 32px -1px rgba(0, 0, 0, 0.75);
 }
 
-.floor-call-btn{
+.floor-call-btn {
   display: none;
 }
 
-.floor-card:hover .floor-call-btn{
+.floor-card:hover .floor-call-btn {
   display: block;
 }
 .location-key {
@@ -90,7 +96,7 @@
 
 /* Form container styles */
 .form-container {
-  width: 50%;
+  width: 40%;
   z-index: 1000;
   pointer-events: auto;
   position: relative;
@@ -99,8 +105,8 @@
 /* Close Button Styles */
 .close-btn {
   position: absolute;
-  top: 4px;
-  right: 10px;
+  top: -21px;
+  right: -8px;
   background: none;
   border: none;
   font-size: 24px;
