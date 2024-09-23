@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 * {
@@ -19,10 +18,6 @@
 
 .heroCarousel > img {
   width: 100%;
-}
-
-.headings {
-  font-family: "Pacifico", cursive;
 }
 
 .prestige-desc > p,
