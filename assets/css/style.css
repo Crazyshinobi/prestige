@@ -205,3 +205,8 @@ footer {
 #enquireBtn{
   text-wrap: nowrap;
 }
+
+.rera-alt > img{
+  height: auto;
+  width: 100%;
+}

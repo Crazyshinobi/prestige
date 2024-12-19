@@ -4,6 +4,10 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .siddharth-vihar-img{
+    height: 200px !important;
+  }
+
   .nav-link {
     font-size: 16px !important;
   }
