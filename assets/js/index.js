@@ -3,7 +3,6 @@ const form = document.getElementById("form-wrapper");
 const floatingBtn = document.getElementById("floating-btn");
 const callFloorBtns = document.querySelectorAll(".call-floor");
 const downloadBrochure = document.querySelector(".download-brochure");
-console.log(downloadBrochure);
 
 closeBtn.addEventListener("click", () => {
   form.classList.add("d-none");
